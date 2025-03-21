@@ -8,9 +8,9 @@ const Header = () => {
 
   return (
     <>
-    <header className="p-3 mb-3 border-bottom heading">
-    <div className="container">
-      <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <header className="p-3 border-bottom heading">
+    <div className="container headContainer">
+      <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start headContainer">
         <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
           <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlinkHref="#bootstrap"></use></svg>
         </a>
