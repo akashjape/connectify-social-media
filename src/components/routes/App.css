@@ -108,7 +108,8 @@ body, html {
 
 /* Post card responsiveness */
 .post-card {
-  margin: 20px;
+  margin: 5%;
+  margin-top: 2%;
   width: 80%;
   max-width: 90%;
 }
@@ -186,12 +187,32 @@ body, html {
     left: 0;
     width: 100%;
   }
+
+  .heading{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0rem !important;
+  }
+
+  .headerList{
+    display: flex;
+    width: 50%;
+    flex-wrap: nowrap;
+    padding-left: 0px !important;
+    margin-left: -8%;
+    margin-right: 2%;
+  }
+  .searchBox{
+    display: flex;
+    width : 40%;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .post-card {
     width: 100%;
-    margin: 10px auto;
+    margin: 10px 20px;
   }
 
   .create-post {
@@ -202,6 +223,8 @@ body, html {
     position: relative;
     width: 100%;
   }
+
+  
 }
 
 @media screen and (max-width: 480px) {

@@ -15,14 +15,14 @@ const Header = () => {
           <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlinkHref="#bootstrap"></use></svg>
         </a>
 
-        <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 headerList">
           <li><a href="#" className="nav-link px-2 link-secondary">Home</a></li>
           <li><a href="#" className="nav-link px-2 link-body-emphasis">Add</a></li>
           <li><a href="#" className="nav-link px-2 link-body-emphasis">Setting</a></li>
           <li><a href="#" className="nav-link px-2 link-body-emphasis">Profile</a></li>
         </ul>
 
-        <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 searchBox" role="search">
           <input type="search" className="form-control" placeholder="Search..." aria-label="Search" onChange={(e) => setSearchQuery(e.target.value)}/>
         </form>
 
