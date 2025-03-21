@@ -1,0 +1,219 @@
+/* body, html{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.app-container{
+  display: flex;
+  
+ 
+}
+
+.content{
+  width: 100%;
+
+}
+
+.sidebar{
+  height: 100vh;
+}
+
+.post-card{
+  margin: 20px;
+  width: 900px;
+}
+
+.hashTag{
+  margin: 5px;
+}
+
+.create-post{
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.footer{
+  
+ 
+  left: 284px;
+  width: calc(100% - 284px);
+  z-index: 900; /* Lower than header 
+
+  
+}
+.footer-content{
+  margin-top: 0%;
+  z-index: 1;
+}
+
+
+.emptyMeassage{
+  min-height: 70%;
+  text-align: center;
+  margin-top: 17%;
+  margin-bottom: 17%;
+}
+
+.post-container {
+ margin-bottom: 100px;
+  height: calc(100vh - 33vh); /* Adjust based on header height 
+  overflow-y: auto; /* Enable vertical scrolling 
+}
+.post-container::-webkit-scrollbar {
+  display: none;
+}
+
+.spinner{
+  margin: 16% ;
+  margin-left: 45%;
+  width: 7rem;
+  height: 7rem;
+}
+
+.logo{
+  position: relative;
+  display: inline;
+  height: 50px;
+  width: 50px;
+  margin-left: -50px;
+  left: 0;
+  margin-right: 25px;
+}
+
+chatgpt css
+ */
+
+/* Global styles */
+body, html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100vh;
+  min-width: 25%;
+}
+
+/* Post card responsiveness */
+.post-card {
+  margin: 20px;
+  width: 80%;
+  max-width: 90%;
+}
+
+/* Hashtags */
+.hashTag {
+  margin: 5px;
+}
+
+/* Create post form */
+.create-post {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Footer */
+.footer {
+  left: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+.footer-content {
+  margin-top: 0;
+  z-index: 1;
+}
+
+/* Empty message */
+.emptyMeassage {
+  min-height: 70%;
+  text-align: center;
+  margin: 17% auto;
+}
+
+/* Post container */
+.post-container {
+  margin-bottom: 100px;
+  max-height: calc(100vh - 33vh);
+  overflow-y: auto;
+}
+.post-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Spinner */
+.spinner {
+  margin: 16% auto;
+  width: 7rem;
+  height: 7rem;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: -50px;
+  margin-right: 25px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+  }
+
+  .footer {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-card {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .create-post {
+    width: 95%;
+  }
+
+  .footer {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+
+  .post-card {
+    width: 100%;
+  }
+
+  .create-post {
+    width: 100%;
+  }
+}
