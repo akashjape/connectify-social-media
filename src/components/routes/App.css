@@ -15,11 +15,17 @@ body, html {
   width: 100%;
 }
 
+.headingInApp{
+  display: none !important;
+  background-color: aqua;
+}
+
 /* Sidebar */
 .sidebar {
   height: 100vh;
   width: 100%;
 }
+
 
 /* Post card responsiveness */
 .post-card {
@@ -33,6 +39,7 @@ div.post-list{
   display: flex  ;
   flex-direction: column;
   align-items: center;
+  margin-top: 2%;
 
 }
 /* Hashtags */
@@ -48,10 +55,11 @@ div.post-list{
 }
 
 /* Footer */
-.footer {
-  left: 0;
+footer.py-3.my-4 {
+  padding-top: 0% !important;
+  margin-top: 0% !important;
   width: 100%;
-  z-index: 900;
+  z-index: 100;
 }
 
 .footer-content {
@@ -69,9 +77,10 @@ div.post-list{
 /* Post container */
 .post-container {
   margin-bottom: 100px;
-  max-height: calc(100vh - 33vh);
+  max-height: calc(100vh - 30vh);
   overflow-y: auto;
   justify-items: center;
+  margin-bottom: 0px;
 
 }
 .post-container::-webkit-scrollbar {
@@ -119,6 +128,17 @@ div.post-list{
     display: none !important;
   }
 
+  .headingInApp{
+    display: flex !important;
+    background-color: rgb(33, 37, 41);
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  header.border-bottom{
+    padding-bottom: 0% !important;
+  }
   a.headingDp{
     display: none !important;
   }
