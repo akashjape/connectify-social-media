@@ -134,9 +134,11 @@ footer.py-3.my-4 {
     justify-content: center;
     gap: 1rem;
     align-items: center;
+    width: 100%;
   }
 
   header.border-bottom{
+    padding: 0% !important;
     padding-bottom: 0% !important;
   }
   a.headingDp{
