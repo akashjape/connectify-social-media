@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from '../assets/connectify.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
 
+  const location = useLocation();
   
   return (
     <div>
@@ -16,14 +17,14 @@ const Sidebar = () => {
     <hr/>
     <ul className="nav nav-pills flex-column mb-auto">
       <li className="nav-item">
-        <Link to="/" className="nav-link text-white" aria-current="page">
+        <Link to="/" className={`nav-link ${location.pathname === "/" ? 'active': 'text-white'}`} aria-current="page">
           <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#home"></use></svg>
           Home
         </Link>
       </li>
       <li>
-        <Link to="/create-post" className="nav-link text-white">
-          <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#speedometer2"></use></svg>
+        <Link to="/create-post" className={`nav-link ${location.pathname === "/create-post" ? 'active': 'text-white'}`}>
+          <svg className="bi pe-none me-2 " width="16" height="16"><use xlinkHref="#speedometer2"></use></svg>
           Create Post
         </Link>
       </li>
